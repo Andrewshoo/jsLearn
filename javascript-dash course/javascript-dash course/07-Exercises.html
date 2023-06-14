@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>  
+  <body>
+    <script>
+     let myName = 'Andrew';
+
+     function greet(name) {
+      if(name === undefined){
+        console.log(`Hello, there!`);
+      } else {
+      console.log(`Hello, ${name} !`);
+      }
+     } 
+     greet();
+
+     function convertToFahrenheit(celsius) {
+      return (celsius * 9/5) + 32;
+     }
+     console.log(convertToFahrenheit(25));
+
+     function convertToCelsius(fahrenheit) {
+      return (fahrenheit - 32) * 5/9;
+     }
+     console.log(convertToCelsius(86));
+
+     function convertTemperature(degrees, unit) {
+        if (unit === 'C' || unit ==='c') {
+          unit = 'F';
+          return `${(degrees * 9/5) + 32}${unit}`;
+        } else if (unit === 'F' || unit === 'f') {
+          unit = 'C';
+          return `${(degrees - 32) * 5/9}${unit}`;
+        }
+     }
+
+     console.log(convertTemperature(25,'C'));
+     console.log(convertTemperature(86,'F'));
+     console.log(convertTemperature(66,'c'));
+
+     
+    </script>
+  </body>
+</html>

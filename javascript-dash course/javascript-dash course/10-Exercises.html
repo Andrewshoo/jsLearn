@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10 Exercises</title>
+
+    <link rel="stylesheet" href="10-exercises.css">
+  
+  </head>  
+  <body>
+
+    <p>Amazon Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button amazon-button">Add to Cart</button>
+   
+    <p></p>
+    
+    <button class="uber-buttonRequest">Request now</button>
+   
+    <button class="uber-buttonSchedule">Schedule for later</button>
+   
+    <p></p>
+    
+    <button class="js-button">Test</button>
+    <p></p>
+
+    <button class="gamingButton js-gaming-button " onclick="
+      isToggled('.js-gaming-button');
+      
+    ">Gaming</button>
+
+    <button class="gamingButton js-music-button " onclick="
+      isToggled('.js-music-button');
+      
+    ">Music</button>
+
+    <button class="gamingButton js-tech-button " onclick="
+      isToggled('.js-tech-button');
+      
+    ">Tech</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input placeholder="Cost of order" class="js-cost-input cost-input">
+    
+    <button onclick="
+      calculateTotal();
+    
+    " class="calculate-button">Calculate</button>
+    <p class="js-total-cost"></p>
+
+    <script src="10-exercises.js"></script>
+  </body>
+</html>
+
+ 
+
+
+
+
+
+
