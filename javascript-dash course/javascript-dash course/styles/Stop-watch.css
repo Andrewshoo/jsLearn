@@ -1,28 +1,48 @@
 body {
-  font-family: Arial;
-  font:bold;
-  background-color: black;
-  color: orange;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  background-color: #09b77c;
+  height: 100%;
+}
+
+.container {
+  width: 800px;
+  border: 20px solid rgb(49, 47, 44);
+  border-radius: 5px;
+  margin: 50px auto;
+  color: white;
+  text-align: center;
+  background: rgb(49, 47, 44);
+  
 }
 
 .cs-start-button,
 .cs-stop-button,
-.cs-reset-button
-{
+.cs-reset-button {
+ width: 150px;
+ height: 50px;
+ background: transparent;
+ color: white;
+ border: 2px solid white;
+ border-radius: 5px;
+ margin-right: 10px;
+ outline: none;
+}
+
+button:hover {
+  background: white;
+  color:#09b77c;
+  font-weight: 800;
+  text-transform: capitalize;
   
-  font-family: Helvetica;
-  width: 90px;
-  height: 30px;
-  margin-right: 10px;
-  cursor: pointer;
 }
 
-.cs-time {
-  margin-left: 110px;
-  font-size: large;
-  ;
-}
 
+
+.cs-time,
 .cs-name {
-  margin-left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2.6rem;
+  text-transform: capitalize;
 }
+

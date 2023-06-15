@@ -3,24 +3,34 @@ let [seconds, minutes, hours] = [0, 0, 0];
 let timeRef = document.querySelector('.js-time');
 let timer = null;
 let button = document.querySelector('.js-stop-button');
+let buttonStart = document.querySelector('.js-start-button');
+let smt = 'Stopped';
 
 
 document.querySelector('.js-start-button')
   .addEventListener('click', () => {
-    watchStart();
+    if(smt ==='Stopped') {
+      watchStart();
+      buttonStart.innerHTML = 'Stop';
+      smt = 'Started';
+    } else if (smt === 'Started') {
+      watchStop();
+      buttonStart.innerHTML = 'Start';
+      smt = 'Stopped';
+    }
   });
 
-document.querySelector('.js-stop-button')
+/*document.querySelector('.js-stop-button')
   .addEventListener('click', () => {
+    
     watchStop();
-});
+    
+}); */
 
 document.querySelector('.js-reset-button')
   .addEventListener('click', () => {
     watchReset();
   });
-
-
 
 
 function stopwatch() {
@@ -48,10 +58,7 @@ function watchStart() {
     timer = setInterval(() => {
     stopwatch();
   }, 1000);
-  button.innerHTML = 'Stop';
-  button.classList.add('js-stop-button');
-  button.classList.remove('js-reset-button');
-}
+ }
 
 function watchStop() {
   clearInterval(timer);
@@ -61,7 +68,9 @@ function watchReset() {
   clearInterval(timer);
   [seconds, minutes, hours] = [0, 0, 0];
   timeRef.innerHTML = '00:00:00';
-}
+ }
+
+
 
 
 
