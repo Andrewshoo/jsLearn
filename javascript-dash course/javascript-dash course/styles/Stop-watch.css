@@ -6,7 +6,9 @@ body {
 }
 
 .cs-start-button,
-.cs-stop-button {
+.cs-stop-button,
+.cs-reset-button
+{
   
   font-family: Helvetica;
   width: 90px;
@@ -16,10 +18,11 @@ body {
 }
 
 .cs-time {
-  margin-left: 60px;
+  margin-left: 110px;
   font-size: large;
+  ;
 }
 
 .cs-name {
-  margin-left: 30px;
+  margin-left: 80px;
 }
