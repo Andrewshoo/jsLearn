@@ -59,8 +59,11 @@ products.forEach((product) => {
 document.querySelector('.js-products-grid')
   .innerHTML = productsHTML;
 
-let addedMessageTimeoutId;
- // This solution uses a feature of JavaScript called a
+
+
+document.querySelectorAll('.js-add-to-cart')
+  .forEach((button) => {
+    // This solution uses a feature of JavaScript called a
     // closure. Each time we run the loop, it will create
     // a new variable called addedMessageTimeoutId and do
     // button.addEventListener().
@@ -77,9 +80,7 @@ let addedMessageTimeoutId;
     // addedMessageTimeoutId variable (one for every time
     // we run the loop) so it lets us keep track of many
     // timeoutIds (one for each product).
-
-document.querySelectorAll('.js-add-to-cart')
-  .forEach((button) => {
+    let addedMessageTimeoutId;
     button.addEventListener('click', () => {
       //const productId = button.dataset.productId;
       const {productId} = button.dataset; //same shortcut
