@@ -1,0 +1,19 @@
+body {
+  font-family: Montserrat;
+}
+
+.name {
+  font-size: large;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  width: 300px;
+}
+
+.description-underline {
+  text-decoration: underline;
+}
