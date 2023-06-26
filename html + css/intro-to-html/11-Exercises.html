@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11-Exercises Grid</title>
+    <style>
+
+      .grid1 {
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+
+      .grid2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+
+      .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+
+      .div1 {
+        background-color: lightblue;
+      }
+      
+      .div2 {
+        background-color: lightpink;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="grid1">
+      <div class="div1">200px</div>
+      <div class="div2">75px</div>
+    </div>
+
+    <div class="grid2">
+      <div class="div1">col1</div>
+      <div class="div2">col2</div>
+      <div class="div1">col3</div>
+    </div>
+
+    <div class="grid3">
+      <div class="div1">col1</div>
+      <div class="div1">col2</div>
+      <div class="div1">col3</div>
+      <div class="div1">col4</div>
+      <div class="div1">col1</div>
+      <div class="div1">col2</div>
+      <div class="div1">col3</div>
+      <div class="div1">col4</div>
+    </div>
+  </body>
+</html>
