@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>12-Exercises</title>
+
+    <style>
+
+      p {
+        margin-top: 2px;
+        margin-bottom: 4px;
+      }
+      .flex {
+        margin-bottom: 20px;
+        display: flex;
+        
+      }
+      .flex2 {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content:space-between;
+      }
+
+      .flex3 {
+        margin-bottom: 20px;
+        display: flex;
+        border: 1px solid gray;
+        height: 50px;
+        justify-content:space-between;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .div1 {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .div2 {
+        background-color: lightpink;
+        width: 75px;
+      }
+
+      .div3 {
+        background-color: lightblue;
+        width: 50px;
+      }
+
+      .div4 {
+        background-color: lightpink;
+        flex: 1;
+      }
+
+      .div5 {
+        background-color: lightblue;
+        width: 75px;
+      }
+
+      .div6 {
+        background-color: lightpink;
+      }
+
+      .table {
+        font-family: Arial;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 5px;
+        justify-content: space-between;
+        width: 300px;
+        background-color: rgb(248, 244, 244);
+      }
+
+      .home {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: 500;
+      }
+
+      .home-button {
+        background-color: rgba(0, 0, 255, 0.801);
+        border-radius: 45%;
+        border: none;
+        padding: 3px 10px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .profile {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+      }
+
+      .profile-image {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      .profile-info {
+        margin-left: 10px;
+        width: 200px;
+      }
+      
+      .profile-name {
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      .profile-about {
+        color: gray;
+        margin-bottom: 3px;
+      }
+      
+      .profile-about-statistic {
+        margin: 0;
+        color: gray;
+      }
+
+      .profile-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        font-size: large;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .header {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(120, 82, 178);
+        justify-content: space-between;
+      }
+
+      .home {
+        padding: 10px 10px;
+        font-weight: bold;
+        width: 200px;
+      }
+
+      .home-link {
+        color: white;
+      }
+
+      .search {
+        flex: 1;
+        max-width: 700px;
+        text-align: center;
+      }
+
+      .search-bar {
+        width: 400px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: none;
+      }
+
+      .button {
+        margin-right: 10px;
+        width: 400px;
+        text-align: end;
+      }
+
+      .button-search-bar {
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 8px 15px;
+        border-radius: 4px;
+
+      }
+
+      
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="flex">
+      <div class="div1">200px</div>
+      <div class="div2">75px</div>
+    </div>
+
+    <div class="flex">
+      <div class="div3">item1</div>
+      <div class="div4">item2</div>
+      <div class="div5">item3</div>
+    </div>
+
+    <div class="flex2">
+      <div class="div6">item1</div>
+      <div class="div6">item2</div>
+      <div class="div6">item3</div>
+      <div class="div6">item4</div>
+    </div>
+
+    <div class="flex3">
+      <div class="div6">item1</div>
+      <div class="div6">item2</div>
+    </div>
+
+    <div class="table">
+      <div class="home">
+        Home
+        <button class="home-button">14</button>
+      </div>
+      <div class="home">
+        Notification
+        <button class="home-button">3</button>
+      </div>
+      <div class="home">
+        Messages
+        <button class="home-button">5</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img class="profile-image" src="kot.jpg">
+      <div class="profile-info">
+        <p class="profile-name">oliver</p>
+        <p class="profile-about">the cat</p>
+        <p class="profile-about-statistic">Popular</p>
+      </div>
+      <div>
+        <button class="profile-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img class="profile-image" src="kot-2.jpg">
+      <div class="profile-info">
+        <p class="profile-name">Mimi</p>
+        <p class="profile-about">Sleepy Cat</p>
+        <p class="profile-about-statistic">Popular</p>
+      </div>
+      <div>
+        <button class="profile-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img class="profile-image" src="dog.jpg">
+      <div class="profile-info">
+        <p class="profile-name">Rex</p>
+        <p class="profile-about">happy Bulldog</p>
+        <p class="profile-about-statistic">Popular</p>
+      </div>
+      <div>
+        <button class="profile-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="home">
+        <p class="home-link">Home</p>
+      </div>
+      <div class="search">
+        <input class="search-bar" type="text" placeholder="Search" >
+      </div>
+      <div class="button">
+        <button class="button-search-bar">Download</button>
+      </div>
+
+
+    </div>
+
+    
+
+   
+    
+
+  </body>
+</html>
