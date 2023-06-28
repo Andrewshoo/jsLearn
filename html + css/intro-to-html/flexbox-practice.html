@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Flexbox practice</title>
+
+    <style>
+
+      p {
+        font-family: Arial;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+      }
+
+      .item1 {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .item2 {
+        background-color: lightpink;
+        width: 75px;
+      }
+
+      .item3 {
+        background-color: lightblue;
+        width: 50px;
+      }
+
+      .item4 {
+        background-color: lightpink;
+        flex: 1;
+      }
+
+      .item5 {
+        background-color: lightblue;
+        width: 75px;
+      }
+
+      .flexbox1 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .flexbox2 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.205);
+        align-items: center;
+      }
+
+      .item6 {
+        background-color: lightpink;
+        
+      }
+
+      .container {
+        margin-top: 20px;
+        padding: 5px 5px;
+        width: 300px;
+        border: 1px solid rgba(128, 128, 128, 0.575);
+        border-radius: 7px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .notification {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .home-button {
+        font-weight: bold;
+        font-size: 14px;
+        background-color: rgb(73, 73, 219);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 11px;
+        margin-right: 10px;
+      }
+
+      .follow-table {
+        width: 400px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .profile-info {
+        width: 150px;
+      }
+
+      .profile-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+      }
+
+      .name {
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 2px; 
+      }
+
+      .about {
+        color: gray;
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: start;
+      }
+
+      .follow-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 7px;
+      }
+      
+      .search-bar {
+        margin-top: 30px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blueviolet;
+      }
+
+      .left-section {
+        width: 100px;
+      }
+
+      .home-label {
+        color: white;
+      }
+
+      .middle-section {
+        flex: 1;
+        max-width: 500px;
+      }
+
+      .search-zone {
+        width: 100%;
+        border-radius: 25px;
+        border: none;
+        padding: 5px;
+      }
+
+      .search-zone::placeholder{
+        padding-left: 10px;
+      }
+
+      .right-section {
+        width: 150px;
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+      }
+
+      .download-button {
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 5px 10px;
+        color: white;
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="flexbox">
+      <div class="item1">200px</div>
+      <div class="item2">75px</div>
+    </div>
+
+    <div class="flexbox">
+      <div class="item3">item1</div>
+      <div class="item4">item2</div>
+      <div class="item5">item3</div>
+    </div>
+
+    <div class="flexbox1">
+      <div class="item6">item1</div>
+      <div class="item6">item2</div>
+      <div class="item6">item3</div>
+      <div class="item6">item4</div>
+    </div>
+
+    <div class="flexbox2">
+      <div class="item6">item1</div>
+      <div class="item6">item2</div>
+    </div>
+
+    <div class="container">
+      <div class="notification">
+        <p class="home-lable">Home</p>
+        <button class="home-button">14</button>
+      </div>
+      <div class="notification">
+        <p>Notifications</p>
+        <button class="home-button">3</button>
+      </div>
+      <div class="notification">
+        <p>Messages</p>
+        <button class="home-button">5</button>
+      </div>
+    </div>
+
+    <div class="follow-table">
+      <img class="profile-image" src="kot-2.jpg">
+      <div class="profile-info">
+        <p class="name">Oliver</p>
+        <p class="about">The cat</p>
+        <p class="about">Popular</p>
+      </div>
+      <div class="buttons">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="follow-table">
+      <img class="profile-image" src="kot-3.jpg">
+      <div class="profile-info">
+        <p class="name">Mimi</p>
+        <p class="about">Sleepy cat</p>
+        <p class="about">Popular</p>
+      </div>
+      <div class="buttons">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="follow-table">
+      <img class="profile-image" src="dog2.jpg">
+      <div class="profile-info">
+        <p class="name">Rex</p>
+        <p class="about">Happy Bulldog</p>
+        <p class="about">Popular</p>
+      </div>
+      <div class="buttons">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <div class="left-section">
+        <p class="home-label">Home</p>
+      </div>
+      <div class="middle-section">
+        <input class="search-zone" type="text" placeholder="Search">
+      </div>
+      <div class="right-section">
+        <button class="download-button">Download</button>
+      </div>
+    </div>
+    
+  </body>
+</html>

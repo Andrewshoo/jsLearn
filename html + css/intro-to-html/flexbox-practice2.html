@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Flexbox practice2</title>
+
+    <style>
+      .flexbox {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .item1 {
+        display: flex;
+        width: 100px;
+        background-color: lightpink;
+        justify-content: center;
+      }
+
+      .text {
+        color: white;
+        background-color: black;
+      }
+
+      .item2 {
+        width: 200px;
+        background-color: lightblue;
+      }
+
+      .item3 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+      .row1,
+      .row2 {
+        margin: 0;
+      } 
+
+      .row2 {
+        color: white;
+        background-color: black;
+        margin-bottom: 15px;
+      }
+
+      .container {
+        width: 350px;
+      }
+
+      .profile-image {
+        display: flex;
+        background-color: blueviolet;
+      }
+
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      .email-theme {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: aqua;
+      }
+
+      .theme,
+      .time {
+        margin: 0;
+        font-weight: bold;
+        font-family: Arial;
+      }
+
+      .time {
+        font-weight: 500;
+        font-size: 14px;
+        color: gray;
+      }
+
+      .email-about {
+        display: block;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="item1">
+        <p class="text">item1</p>
+      </div>
+      <div class="item2"></div>
+    </div>
+
+    <body>
+      <div class="flexbox">
+        <div class="item1"></div>
+        <div class="item2">
+          <p class="row1">row1</p>
+          <div class="item3">
+            <p class="row2">row2</p>
+            <p class="row2">row2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p>ALL INBOXES</p>
+        <div class="profile-image">
+          <img class="profile-picture" src="kot.jpg">
+          <div class="email-theme">
+            <p class="theme">Chewy Promotions</p>
+            <p class="time">4:58PM</p>
+            <div class="email-about">s</div>
+          </div>
+          
+        </div>
+      </div>
+    
+    
+  </body>
+</html>
