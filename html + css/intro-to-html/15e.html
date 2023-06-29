@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>15e</title>
+
+    <style>
+      .container {
+        display: flex;
+        width: 320px;
+        height: 320px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .product {
+        position: relative;
+      }
+
+      .tshirts {
+        width: 300px;
+        object-fit: contain;
+      }
+
+      .discount {
+        position: absolute;
+        top: 5px;
+        padding: 5px 5px;
+        right: 0;
+        background-color: black;
+        color: white ;
+      }
+
+      .button-container {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        background-color: rgba(160, 160, 160, 0.705);
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .add-button {
+        font-family: Arial;
+        font-weight: 700;
+        padding: 7px 10px;
+        border: 1px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <img class="tshirts" src="tshirt.jpg">
+        <div class="discount">20% OFF</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="product">
+        <img class="tshirts" src="tshirt.jpg">
+        <div class="discount">20% OFF</div>
+        <div class="button-container">
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

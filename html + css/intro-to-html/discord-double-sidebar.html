@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Sidebar</title>
+
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 75px;
+        background-color: rgb(32, 32, 32);
+      }
+
+      .sidebar2 {
+        position: fixed;
+        left: 75px;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: rgb(46, 46, 46);
+      }
+
+      .profile-image {
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-pictures {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .hashtags-menu {
+        display: flex;
+        font-family: Arial;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 12px;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .hashtags {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial;
+        margin-left: 20px;
+        color: gray;
+      }
+
+      .plus {
+        color: gray;
+        font-size: 30px;
+      }
+
+      .hashtags-text {
+        margin-top: 5px;
+      }
+
+      
+
+    </style>
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="container">
+        <div class="profile-pictures">
+          <img class="profile-image" src="kot.jpg">
+          <img class="profile-image" src="kot-2.jpg">
+          <img class="profile-image" src="dog.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar2">
+      <div class="sidebar-container">
+        <div class="hashtags-menu">
+          <div class="info">INFO</div>
+          <div class="plus">+</div>
+        </div>
+        <div class="hashtags">
+          <p class="hashtags-text">&#35; new-videos</p>
+          <p class="hashtags-text">&#35; updates</p>
+          <p class="hashtags-text">&#35; faq</p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

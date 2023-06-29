@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Position-practice-ex</title>
+
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      .bottom-right {
+        color: white;
+        background-color: black;
+        display: inline-block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .right-sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100px;
+        background-color: green;
+        bottom: 0;
+        color: white;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flexbox {
+        display: flex;
+      }
+
+      .container {
+        width: 400px;
+        height: 120px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .modal {
+        font-family: Arial;
+        font-weight: bold;
+        margin: 15px;
+      }
+
+      .title {
+        margin: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .info {
+        margin-bottom: 12px;
+        font-size: 13px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="bottom-right">bottom-right</div>
+    <div class="right-sidebar">right-sidebar</div>
+    <div class="overlay">
+      <div class="flexbox">
+        <div class="container">
+          <div class="modal">
+            <p class="title">Modal Title</p>
+            <p class="info">This is modal</p>
+            <button class="button">Close</button>
+          </div>
+      
+    </div>
+
+    
+        
+      </div>
+    </div>
+
+  </body>
+</html>
