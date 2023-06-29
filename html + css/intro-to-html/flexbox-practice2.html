@@ -5,6 +5,12 @@
     <title>Flexbox practice2</title>
 
     <style>
+      p {
+        margin: 0;
+        font-family: Arial;
+        font-size: 15px;
+      }
+
       .flexbox {
         display: flex;
         margin-bottom: 20px;
@@ -41,50 +47,131 @@
       .row2 {
         color: white;
         background-color: black;
-        margin-bottom: 15px;
+        
+      }
+
+      .allin {
+        display: inline-block;
+        padding: 10px 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);      
+      }
+
+      .label {
+       margin-bottom: 20px;
+       color: gray;
+       font-family: Arial;
       }
 
       .container {
-        width: 350px;
-      }
-
-      .profile-image {
         display: flex;
-        background-color: blueviolet;
+        align-items: center;
+        margin-bottom: 30px;
       }
 
-      .profile-picture {
+      .column1 {
+        display: flex;
+        width: 50px;
+        margin-right: 10px;
+        
+      }
+
+      .image {
         width: 50px;
         height: 50px;
         object-fit: cover;
         border-radius: 25px;
       }
 
-      .email-theme {
+      .column2 {
+        display: block;
+
+      }
+
+      .col-row1 {
+        width: 320px;
         display: flex;
-        width: 100%;
         justify-content: space-between;
-        background-color: aqua;
+        margin-bottom: 3px;
       }
 
-      .theme,
-      .time {
-        margin: 0;
+      .col2-row2 {
         font-weight: bold;
-        font-family: Arial;
+        margin-bottom: 3px;
       }
-
-      .time {
-        font-weight: 500;
-        font-size: 14px;
+      .col2-row3 {
         color: gray;
       }
 
-      .email-about {
-        display: block;
+      .from {
+        font-size: large;
+        font-weight: bolder;
       }
 
+      .time {
+        font-weight: bold;
+        color: gray;
+        font-size: 12px;
+      }
+
+      .flexbox-youtube {
+        margin-top: 30px;
+        display: flex;
+      }
+
+      .youtube-column1 {
+        display: flex;
+        width: 50px;
+        height: 150px;
+      }
+
+      .youtube-column2 {
+        display: flex;
+        margin-left: 10px;
+        width: 320px;
+      }
+
+      .youtube-user {
+        font-size: large;
+        font-weight: bold;
+      }
+
+      .youtube-user-link {
+        color: gray;
+      }
+
+      .youtube-video-container {
+        display: flex;
+        margin-top: 15px;
+        height: 80px;
+        width: 310px;
+        background-color: rgb(207, 207, 207);
+        border: none;
+        border-radius: 15px;
+        align-items: center;
+      }
+
+      .youtube-video-link-container {
+        width: 210px;
+        height: 78px;
+        background-color: aliceblue;
+        margin-left: 99px;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+      }
+
+      .link {
+        color: gray;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+      }
+
+      .link-info {
+        
+        margin-left: 10px;
+      }
       
+
     </style>
   </head>
   <body>
@@ -95,7 +182,6 @@
       <div class="item2"></div>
     </div>
 
-    <body>
       <div class="flexbox">
         <div class="item1"></div>
         <div class="item2">
@@ -107,18 +193,63 @@
         </div>
       </div>
 
-      <div class="container">
-        <p>ALL INBOXES</p>
-        <div class="profile-image">
-          <img class="profile-picture" src="kot.jpg">
-          <div class="email-theme">
-            <p class="theme">Chewy Promotions</p>
-            <p class="time">4:58PM</p>
-            <div class="email-about">s</div>
+      <div class="allin">
+        <p class="label">ALL INBOXES</p>
+        <div class="container">
+          <div class="column1">
+            <img class="image" src="kot-2.jpg">
           </div>
-          
+          <div class="column2">
+            <div class="col-row1">
+              <p class="from">Chewy promotions</p>
+              <p class="time">4:58PM</p>
+            </div>
+              <p class="col2-row2">Biggest sales of the year!</p>
+              <p class="col2-row3">Hey there! We're writing to tell you about our...</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="column1">
+            <img class="image" src="dog.jpg">
+          </div>
+          <div class="column2">
+            <div class="col-row1">
+              <p class="from">Best buy</p>
+              <p class="time">12:32PM</p>
+            </div>
+              <p class="col2-row2">Your Best Buy eReceipt</p>
+              <p class="col2-row3">Thank for shopping at Best Buy, here is...</p>
+      </div>
+    </div>
+    </div>
+
+      <div class="flexbox-youtube">
+        <div class="youtube-column1">
+          <img class="image" src="dog.jpg">
+        </div>
+        <div class="youtube-column2">
+          <div class="youtube-row1">
+            <p class="youtube-user">supersimple.dev <span class="youtube-user-link">@SuperSimpleDev</span></p>
+            <p>What is backend web development? A complete overview. New video is up!</p>
+            <div class="youtube-video-container">
+              <div class="youtube-video-link-container">
+                <p class="link">youtube.com</p>
+                <p class="link-info">Backend web development - a complete overview (2021)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    
+      
+      
+      
+
+      
+
+          
+        
+      
     
     
   </body>
