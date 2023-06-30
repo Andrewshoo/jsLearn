@@ -1,10 +1,22 @@
 p {
-  font-family: Roboto, Arial;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+u {
+  color: black;
+  text-decoration: none;
+}
+
 body {
+  /* This style below will be inherited */
+  font-family: Roboto, Arial;
   margin: 0;
   padding-top: 80px;
   padding-left: 96px;

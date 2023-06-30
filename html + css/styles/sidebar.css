@@ -28,6 +28,43 @@
 }
 
 .sidebar-link div {
-  font-family: Roboto, Arial;
   font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-left: 230px ;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 200px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  .sidebar-link {
+    margin-left: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-right: 21px;
+  }
+
+  .sidebar-link div {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  
 }
